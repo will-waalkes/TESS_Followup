@@ -12,10 +12,27 @@ import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 import batman
 from scipy.optimize import least_squares
-import emcee
+from ldtk import (LDPSetCreator,BoxcarFilter)
+from ldtk.filters import kepler
 
-def Limb_Dark(T_eff,log_g,metallicity):
-    #use LDTK to calculate the limb darkening coefficients based on this
+
+def Limb_Dark(Teff=2500,Terr=100,log_g=4.5,g_err=0.1,met=0.25,met_err=0.05):
+    
+    filters = [BoxcarFilter('a',450,550),
+               BoxcarFilter('b',650,750),
+               BoxcarFilter('c',850,950)]
+    
+    filters = [kepler]
+
+    sc = LDPSetCreator(filters=filters,
+                   teff=[Teff,Terr],
+                   logg=[log_g, g_err],
+                   z=[met, met_err])
+    
+    ps = sc.create_profiles(nsamples=500)
+    qc,qe = ps.coeffs_qd(do_mc=True)
+    
+    LD_coeff = [qc,qe]
     
     return LD_coeff
 
