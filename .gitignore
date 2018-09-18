@@ -1,5 +1,3 @@
-mastDownload
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -7,6 +5,15 @@ __pycache__/
 
 # C extensions
 *.so
+
+#Image files
+*.pdf
+*.png
+*.eps
+*.jpg
+*.jpeg
+
+.DS_Store
 
 # Distribution / packaging
 .Python
