@@ -109,10 +109,12 @@ ENV/
 # mypy
 .mypy_cache/
 
-.csv
+*.csv
 
-.dat
+*.dat
 
-.md
+*.md
 
-.icloud
+*.icloud
+
+tessworkshop/*
