@@ -108,3 +108,11 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+.csv
+
+.dat
+
+.md
+
+.icloud
