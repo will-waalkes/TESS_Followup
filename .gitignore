@@ -111,9 +111,9 @@ ENV/
 
 *.csv
 
-*.dat*
+*samples.dat*
 
-*samples*
+*samples.txt*
 
 *.md
 
