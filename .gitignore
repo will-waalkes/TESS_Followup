@@ -113,6 +113,8 @@ ENV/
 
 *.dat*
 
+*samples*
+
 *.md
 
 *.icloud
