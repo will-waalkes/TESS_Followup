@@ -120,19 +120,5 @@ ENV/
 *.icloud
 
 tessworkshop/*
-Data/TESS/TOI_762.01_bestfitparams.txt
-Data/TESS/TOI_737.01_bestfitparams.txt
-Data/TESS/TOI_736.03_bestfitparams.txt
-Data/TESS/TOI_736.31_bestfitparams.txt
-Data/TESS/TOI_737.01_bestfitparams.txt
-Data/TESS/TOI_0.11_bestfitparams.txt
-Data/TESS/TOI_1080.01_bestfitparams.txt
-Data/TESS/TOI_122.01_bestfitparams.txt
-Data/TESS/TOI_1231.01_bestfitparams.txt
-Data/TESS/TOI_136.01_bestfitparams.txt
-Data/TESS/TOI_175.02_bestfitparams.txt
-Data/TESS/TOI_176.01_bestfitparams.txt
-Data/TESS/TOI_237.01_bestfitparams.txt
-Data/TESS/TOI_269.01_bestfitparams.txt
-Data/TESS/TOI_450.01_bestfitparams.txt
-Data/TESS/TOI_507.01_bestfitparams.txt
+
+*TOI*bestfitparams.txt
