@@ -23,11 +23,9 @@ def Limb_Dark(Teff = 3300,
                    z=[met, met_err])
     
     ps = sc.create_profiles(nsamples=500)
-    qc,qe = ps.coeffs_qd(do_mc=True)
+    qc,qe = ps.coeffs_qd(do_mc=True) 
     
-    LD_coeff = qc
-    
-    return LD_coeff
+    return qc,qe
 
 def BATMAN(P,
            Rp,
