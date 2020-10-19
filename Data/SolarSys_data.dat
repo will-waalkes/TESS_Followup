@@ -1,0 +1,10 @@
+Planet R_earth Vesc Vtherm Insolation
+Mercury 0.38 4.3 3.3 6.7
+Venus 0.95 10.4 2.4 1.9
+Earth 1.0 11.2 2.5 1.0
+Mars 0.53 5.0 2.3 0.4
+Jupiter 11.2 59.5 1.7 0.04
+Saturn 9.45 35.5 1.4 0.01
+Uranus 4.01 21.3 1.2 0.003
+Neptune 3.88 23.5 1.1 0.001
+Pluto 0.19 1.2 1.0 0.0006
