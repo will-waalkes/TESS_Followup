@@ -35,10 +35,12 @@ def BATMAN(P,
            LD,
            t = None,
            Baseline = 1.0):
+    
+    
                     
     params = batman.TransitParams()
     params.t0 = t0                       # time of inferior conjunction ()
-    params.per = P                       # period in hours
+    params.per = P                       # period in days
     params.rp = Rp                       # planet radius (in units of stellar radii)
     params.a = A                         # semi-major axis (in units of stellar radii)
     params.inc = inc                     # orbital inclination (in degrees)
