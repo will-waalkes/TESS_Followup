@@ -16,9 +16,9 @@ __pycache__/
 *.jpg
 *.jpeg
 
-*Figs
-*Data
-*exoatlas-downloads
+*Figs/
+*Data/
+*exoatlas-downloads/
 
 .DS_Store
 
