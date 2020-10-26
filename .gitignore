@@ -16,9 +16,9 @@ __pycache__/
 *.jpg
 *.jpeg
 
-Data/
+~Data/
 
-Figs/
+~Figs/
 
 exoatlas-downloads/
 
