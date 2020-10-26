@@ -16,6 +16,12 @@ __pycache__/
 *.jpg
 *.jpeg
 
+Data/
+
+Figs/
+
+exoatlas-downloads/
+
 .DS_Store
 
 # Distribution / packaging
