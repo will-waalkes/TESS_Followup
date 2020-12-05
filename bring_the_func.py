@@ -91,7 +91,7 @@ def lnprior(lc,
         
     i_min = np.arccos(1/a)*180/np.pi
 
-    if (0.0<=rp<= 1.0)and(expected_t0-0.015<=t_0<=expected_t0+0.015)and(planet_a-5<=a<=planet_a+5)and(i<= 90.0):
+    if (0.0<=rp<= 1.0)and(expected_t0-0.1<=t_0<=expected_t0+0.1)and(planet_a-10<=a<=planet_a+10)and(50.0<=i<= 90.0):
         
 #         rp_mean = 0.0533
 #         rp_sigma = 0.004
@@ -296,7 +296,7 @@ def light_curve(lc,
     #########################
             
     f, (a0, a1) = plt.subplots(2,1, gridspec_kw = {'height_ratios':[4,1]},
-                               figsize=(10,7),sharex=True)
+                               figsize=(14,7),sharex=True)
     
     a0.set_title('Modeled LCO Light Curve for TOI {}'.format(toi),fontsize=20)
     a0.errorbar((lc.time-t_0_best)*24,lc.flux/(C1_best + C2_best*(airmass-1)),
@@ -305,7 +305,7 @@ def light_curve(lc,
                 label=observatory+' data')
     a0.plot((hires_times-t_0_best)*24,model_to_plot,label='Best-Fit Model',color='k',zorder=100)
     a0.set_ylabel('Normalized Flux',fontsize=18)
-    a0.set_xlim(-1.5,1.5)
+    a0.set_xlim(-3,3)
     a0.minorticks_on()
     a0.legend(loc='lower right')
     a0.tick_params(labelbottom=False, labeltop=False, labelleft=True, labelright=False,
